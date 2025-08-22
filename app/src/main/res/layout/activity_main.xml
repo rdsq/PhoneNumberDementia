@@ -9,7 +9,7 @@
         android:id="@+id/phoneNumberText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your phone number will appear here"
+        android:text="@string/placeholder_text"
         android:textSize="40sp"
         android:padding="8dp" />
 
@@ -17,7 +17,7 @@
         android:id="@+id/copyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Copy to Clipboard"
+        android:text="@string/copy_button"
         android:enabled="false" />
 
 </LinearLayout>

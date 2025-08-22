@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             if (isGranted) {
                 getPhoneNumber()
             } else {
-                phoneNumberText.text = "Permission denied."
+                phoneNumberText.text = getString(R.string.permission_denied)
             }
         }
 
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                 Manifest.permission.READ_PHONE_NUMBERS
             ) != PackageManager.PERMISSION_GRANTED
         ) {
-            phoneNumberText.text = "Permission not granted."
+            phoneNumberText.text = getString(R.string.permission_not_granted)
             copyButton.isEnabled = false
             return
         }
@@ -70,12 +70,12 @@ class MainActivity : AppCompatActivity() {
 
             copyButton.setOnClickListener {
                 val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-                val clip = ClipData.newPlainText("Phone Number", number)
+                val clip = ClipData.newPlainText(getString(R.string.clipboard_label), number)
                 clipboard.setPrimaryClip(clip)
-                Toast.makeText(this, "Copied to clipboard!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.copied_to_clipboard), Toast.LENGTH_SHORT).show()
             }
         } else {
-            phoneNumberText.text = "Number not available."
+            phoneNumberText.text = getString(R.string.number_not_available)
             copyButton.isEnabled = false
         }
     }

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Telefonnumera Demenco</string>
+    <string name="placeholder_text">(via telefonnumero aperos tie ĉi)</string>
+    <string name="copy_button">Kopii al tondujo</string>
+    <string name="copied_to_clipboard">Al tondujo kopiita</string>
+    <string name="permission_denied">Mankas permeso</string>
+    <string name="number_not_available">Numero ne disponeblas</string>
+    <string name="permission_not_granted">Permeso ne donita</string>
+    <string name="clipboard_label">Telefonnumero</string>
+</resources>

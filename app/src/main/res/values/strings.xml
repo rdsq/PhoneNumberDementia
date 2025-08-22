@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Phone Number Dementia</string>
+    <string name="placeholder_text">(your phone number will appear here)</string>
+    <string name="copy_button">Copy to clipboard</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="number_not_available">Number not available</string>
+    <string name="permission_not_granted">Permission not granted</string>
+    <string name="clipboard_label">Phone Number</string>
+
+
+    <!-- apparently required -->
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
